@@ -40,7 +40,7 @@ public class JobPortalMain
 		}
 
 		System.out.println("List of candidates are: ");
-		Iterator itr = ts.iterator();
+		Iterator<Candidate> itr = ts.iterator();
 
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
@@ -65,6 +65,6 @@ public class JobPortalMain
 			}
 		}
 
-
+		sc.close();
 	}
 }

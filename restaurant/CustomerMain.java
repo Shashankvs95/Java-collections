@@ -1,7 +1,6 @@
 package com.assignment1.restaurant;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class CustomerMain 
@@ -74,6 +73,8 @@ public class CustomerMain
 			totalPrice=totalPrice+rt.foodPrice;
 		}
 		System.out.println("Your total amount:"+totalPrice);
+		
+		sc.close();
 
 	}
 }

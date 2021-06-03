@@ -10,7 +10,7 @@ public class StudentMain
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		ArrayList st = new ArrayList();
+		ArrayList<Student> st = new ArrayList<Student>();
 		String res=null;
 		do {
 			System.out.println("enter sid sname perc");
@@ -31,7 +31,7 @@ public class StudentMain
 		}while(res.equalsIgnoreCase("yes"));
 		
 		System.out.println("entered student details are");
-		Iterator it=st.iterator();
+		Iterator<Student> it=st.iterator();
 		while(it.hasNext())
 		{
 			System.out.println(it.next());
@@ -57,6 +57,7 @@ public class StudentMain
 			if(s3.getPer()<=70)
 			System.out.println("2st class per is: "+s3.getPer());
 		}
+		sc.close();
 
 	}
 
